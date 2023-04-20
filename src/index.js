@@ -25,32 +25,6 @@ app.listen(3000,()=>console.log("server started on port 3000"))
 
 
 
-//define a moongose schema
-// const mySchema = new mongoose.Schema({
-//     name: String,
-//     email: String,
-//     phone: String
-// });
-// const myModel = mongoose.model("MyModel", mySchema)
-
-
-
-
-
-//Route to handle CSV file upload
-// app.post('/upload-csv', upload.single('csvfile'),async(req,res)=>{
-// try{
-// const csvData = req.file.buffer.toString('utf8')
-// //This should convert the CSV data to a JSON object using csvtojson() and the fromString() method.
-// const jsonData = await csvtojson().fromString(csvData);
-// // Insert the json data into mongodb using mongoose
-// await myModel.insertMany(jsonData)
-// res.status(200).json({message:"data uploaded successfully"})
-// }
-// catch(error){
-//     return res.status(500).json({ message : error.message})
-// }
-// })
 
 
 
